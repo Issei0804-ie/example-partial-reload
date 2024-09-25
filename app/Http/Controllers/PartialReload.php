@@ -13,12 +13,12 @@ class PartialReload extends Controller
         $number = $request->input('num', 0);
 
         return inertia('PartialReload', [
-            'slowExecution' => fn() => $this->verrrrrrrrrySlowExecution(),
+            'slowProcessResult' => fn() => $this->verrrrrrrrrySlowProcessing(),
             'num' => fn() => $number + 1,
         ]);
     }
 
-    private function verrrrrrrrrySlowExecution(): string
+    private function verrrrrrrrrySlowProcessing(): string
     {
         Sleep::sleep(4);
         return CarbonImmutable::now()->toISOString();

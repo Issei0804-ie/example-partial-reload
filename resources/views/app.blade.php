@@ -8,7 +8,7 @@
         @inertiaHead
 
     </head>
-    <body>
+    <body style="background-color: aliceblue">
     @inertia
     </body>
 </html>

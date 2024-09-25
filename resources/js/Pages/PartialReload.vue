@@ -2,7 +2,7 @@
 import {router} from "@inertiajs/vue3";
 
 const props = defineProps({
-    'slowExecution':{
+    'slowProcessResult':{
        type: String,
     },
     'num': {
@@ -29,13 +29,13 @@ const fullPageReloadRequest = () => {
 </script>
 
 <template>
-    <div>
+    <div class="partial-reload">
         <h1>Example Partial Reload</h1>
 
-        <p>slow execution message is the below</p>
-        <p> {{ slowExecution }}</p>
+        <p>Slow process result is the below</p>
+        <p> {{ slowProcessResult }}</p>
 
-        <p>number is the below</p>
+        <p>num is the below</p>
         <p> {{ num }} </p>
 
         <button
